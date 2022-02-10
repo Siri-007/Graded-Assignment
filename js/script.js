@@ -123,10 +123,9 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
         finalHtml += "<\section>";
         return finalHtml;
     }
-    var homeHtmlToInsertIntoMainPage = function(dc.loadMenuCategories, homeHtml) {
-        var targetElem = dc.loadMenuCategories('L');
-        targetElem.innerHtml = homeHtml;
-    };
+    var homeHtmlToInsertIntoMainPage = chosenCategoryShortName;
+    var targetElem = homeHtmlToInsertIntoMainPage;
+    targetElem.innerHtml = homeHtml;
 
     // Given array of category objects, returns a random category object.
     function chooseRandomCategory(categories) {
